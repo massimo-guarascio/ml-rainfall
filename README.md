@@ -8,7 +8,7 @@ The code is developed and maintained by Massimo Guarascio (massimo.guarascio@ica
 
 ## Usage
 
-First, download this repo.
+First, download this repo:
 - You need to have 'python' installed.
 - You also need to install 'numpy', 'matplotplib', 'pandas', and 'sklearn', 'mlxtend'.
 - You may also want to install jupyter notebook to run notebook file.
