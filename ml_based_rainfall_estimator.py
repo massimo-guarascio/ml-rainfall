@@ -25,6 +25,11 @@ from sklearn.metrics.regression import mean_squared_error
 from sklearn.ensemble.weight_boosting import AdaBoostClassifier
 from sklearn.svm.classes import SVR
 
+#**********************#
+#****** Utility *******#
+#**********************#
+
+#Read a single csv file in relational format
 def readSingleDataFile(path, delim): 
     "READ SINGLE FILE"
     try:
@@ -45,12 +50,15 @@ def discretize(value, thresholds):
             val=val+1
     return val
 
+
+#Discretization method
 def preprocess_rains(rains, data, thresholds):
     for r in rains:
         data[r] = data[r].apply(discretize, thresholds = thresholds)
     return data
 
-    
+
+#Compute (Macro) evaluation measures
 def compute_macro_per_class(cm, i):
     
     tp = cm[i][i]    
@@ -71,6 +79,8 @@ def compute_macro_per_class(cm, i):
     
     return csi, far, pod
 
+
+#Compute (Macro) evaluation measure and specific metrics for minority classes
 def compute_statistics_macro(cm, rmse):
 
     num_classes = cm.shape[0]    
@@ -125,6 +135,7 @@ def compute_statistics_macro(cm, rmse):
     
     return (csi,far,pod,rmse,precision_class_3,recall_class_3,f_measure_3,precision_class_4,recall_class_4,f_measure_4)
 
+#initialization method for ensemble
 def create_ensemble(s, num_base_learners=5, n_estimators = 10):
     
     seed = s
@@ -140,6 +151,7 @@ def create_ensemble(s, num_base_learners=5, n_estimators = 10):
     multi_view_stacker = StackingClassifier(base_models, use_probas = True, use_features_in_secondary = False, meta_classifier = meta_classifier)
     return multi_view_stacker
 
+#read external parameters
 def read_params():
     
     #Read parameter from command line
@@ -154,7 +166,11 @@ def read_params():
     
     return trainingset, testset, debug, dataset_path
 
+#**********************#
+#*** main script ******#
+#**********************#
 
+#main method
 if __name__ == "__main__":
        
     #debug parameter enables verbose printing
