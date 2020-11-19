@@ -10,7 +10,7 @@ The code is developed and maintained by Massimo Guarascio (massimo.guarascio@ica
 
 First, download this repo:
 - You need to have 'python3' installed.
-- You also need to install 'numpy', 'matplotplib', 'pandas', and 'sklearn', 'mlxtend'.
+- You also need to install 'numpy', 'matplotplib', 'pandas', 'sklearn' and 'mlxtend'.
 - You may also want to install jupyter notebook to run notebook file.
 
 Then, you can run:
