@@ -21,4 +21,4 @@ The last parameter can be set to 1 for verbose debugging.
 
 ## References
 
-[1] M. Guarascio, G. Folino, F. Chiaravalloti, S. Gabriele, A. Procopio and P. Sabatino, "A Machine Learning Approach for Rainfall Estimation Integrating Heterogeneous Data Sources," in IEEE Transactions on Geoscience and Remote Sensing, doi: 10.1109/TGRS.2020.3037776.
+[1] M. Guarascio, G. Folino, F. Chiaravalloti, S. Gabriele, A. Procopio and P. Sabatino, "A Machine Learning Approach for Rainfall Estimation Integrating Heterogeneous Data Sources", in IEEE Transactions on Geoscience and Remote Sensing, doi: https://doi.org/10.1109/TGRS.2020.3037776.
