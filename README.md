@@ -4,7 +4,7 @@ ML-based Rainfall Estimator [1] is a machine learning-based tool, developed in p
 
 ## Author
 
-The code is developed and maintained by Massimo Guarascio (massimo.guarascio@icar.cnr.it)
+The code is developed and maintained by Massimo Guarascio and Pietro Sabatino (massimo.guarascio@icar.cnr.it, pietro.sabatino@icar.cnr.it)
 
 ## Usage
 
